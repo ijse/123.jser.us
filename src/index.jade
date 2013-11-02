@@ -22,8 +22,11 @@ html(lang='zh')
           a.brand(href='./index.html') 123.jser.us
           .nav-collapse.collapse
             ul.nav
-              li
+              li.tags-cloud-trigger
                 a(href='.') 前端导航站
+                .tags-cloud
+                    each tag in keyArry
+                        a(href='##{tag}' target='_self') #{tag}
               li
                 a(href='https://github.com/jserme/123.jser.us#readme', target='_blank') 我要补充
               li
